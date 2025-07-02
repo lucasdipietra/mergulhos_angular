@@ -1,0 +1,27 @@
+<div class="background"></div>
+
+
+<div class="container">
+
+
+
+
+    <h2>Polvo</h2>
+
+    <p>Os polvos são moluscos marinhos da classe dos cefalópodes, conhecidos por sua inteligência, flexibilidade e capacidade de camuflagem. Vivem em ambientes costeiros, entre rochas e corais, onde se escondem em tocas e caçam à noite. Alimentam-se principalmente de crustáceos, moluscos e pequenos peixes, usando seus oito braços fortes e cheios de ventosas para capturar as presas.
+Uma das principais defesas dos polvos é a liberação de tinta, que cria uma cortina para escapar de predadores. Também conseguem mudar de cor e textura com facilidade, confundindo inimigos ou se camuflando no ambiente. São animais solitários e bastante inteligentes, capazes de resolver problemas e escapar de armadilhas. Sua curiosidade e habilidades surpreendem cientistas e mergulhadores no mundo todo.
+</p>
+
+    <button (click)="carregarVideo4()">
+  {{ showVideo ? 'Fechar Vídeo' : 'Play Vídeo' }}
+</button>
+
+    <div *ngIf="showVideo">
+      <video width="640" controls class="video-pequeno">
+        <source [src]="videoUrl" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+
+</div>

@@ -1,0 +1,39 @@
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1>{{ titulo }}</h1>
+    
+    <img [src]="imagem" alt="Imagem exibida" width="300" style="margin-top: 20px;" />
+
+    <p>{{ texto }}</p>
+
+    
+    <br />
+
+    <div class="botoes">
+      <button (click)="mudarConteudo('Aymore', 'O navio brasileiro saiu do Rio de Janeiro com munições destinadas ao porto de Santos. Durante a viagem, um blecaute geral em Ilhabela deixou todos no escuro, e a falta de iluminação no litoral, somada ao mau tempo, contribuiu para o ofuscamento do navio, que bateu em uma rocha deserta e afundou em 24 de julho de 1920, na Ponta do Ribeirão, ao sul de Ilhabela, entre as praias do Bexiga e do Curral.', 'assets/aymore.jpg')">Aymore</button>
+      <button (click)="mudarConteudo('Crest', 'O Crest foi um dos primeiros navios de casco de ferro a afundar na região de Ilhabela, por isso são raras as fotos que mostram o navio que está desmontado no fundo do mar. A embarcação afundou em 12 de dezembro de 1882, quando se perdeu e veio a naufragar próximo ao bairro dos Borrifos, zona sul de Ilhabela. Crest saiu do porto de Santos com uma carga de café com destino a Nova York, mas não concluiu a viagem.', 'assets/crest.jpg')">Crest</button>
+      <button (click)="mudarConteudo('Dart', 'Um dos mais antigos naufrágios, cargueiro ingês misto (vela-vapor) com casco de aço (105m), que se chocou no costão por erro de navegação acentuado por forte tempestado. Navio luxuoso que geralmente levava Barões do Café para Nova York, estava carregado com passageiros, malas postais e café. Os destroços estão paralelos à costeira e por anos foram saqueados. Após tanta porcelana retirada o Dart ficou conhecido como o navio das louças. É possível ver correntes, escovém, parte do casco com cavernames, 3 âncoras (2 grandes tipo almirantado), guincho, câmara de condensação (ou cilindro) e peças do maquinário.', 'assets/dart.jpg')">Crest</button>
+      <button (click)="mudarConteudo('Velazquez', 'O transatlântico inglês transportava cargas mistas e passageiros quando se chocou contra a costeira em 16 de outubro de 1908, ao sul de Ilhabela, entre os bairros de Taubaté e Ponta da Sela. Completamente desmontado, este é um dos naufrágios mais fáceis para mergulhadores. Durante a maior parte do ano, a água é clara, o que permite boa visibilidade para do naufrágio. Não houve vítimas em Velásquez, e pedaços da embarcação podem ser vistos nas falésias costeiras..', './assets/velazquez.jpg')">Velazquez</button>
+      <button (click)="mudarConteudo('Príncipe das Asturias', 'Quando o “Príncipe das Astúrias” saiu da Espanha para Buenos Aires, pararia em Santos para descarregar chumbo. No entanto, o capitão José Lotina desviou-se da rota durante a viagem e atravessou o Atlântico a sudeste de Ilhabela. Segundo testemunhas oculares, o navio estava ancorado num canal escuro perto da Praia da Serraria e carregou algumas caixas em outra embarcação. Ao final da operação, o navio retomou seu curso normal, mas antes de chegar à rota de Santos, o Príncipe das Astúrias colidiu com uma placa subaquática na Ponta da Pirabura, que abriu um buraco no centro do casco, permitindo a entrada das águas.', '../assets/asturias.jpg')">Asturias</button>
+           
+      
+     </div> 
+  </div>
+
+<!-- 
+
+<h2>Hello from Page 6!</h2>
+
+<p>Clique no botão abaixo para assistir ao vídeo.</p>
+
+<button (click)="carregarVideo6()">Play</button>
+
+<div *ngIf="showVideo">
+  <video width="640" controls>
+    <source [src]="videoUrl" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+</div> -->

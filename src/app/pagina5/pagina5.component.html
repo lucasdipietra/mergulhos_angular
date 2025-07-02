@@ -1,0 +1,27 @@
+<div class="background"></div>
+
+
+<div class="container">
+
+
+
+
+    <h2>Tartaruga de Pente</h2>
+
+    <p>A tartaruga-de-pente (Eretmochelys imbricata) é uma das sete espécies de tartarugas marinhas e se destaca por seu belo casco com placas sobrepostas em formato de telhas, o que a torna alvo da caça ilegal para produção de objetos decorativos. Essa espécie habita principalmente regiões tropicais e subtropicais, como recifes de corais e áreas costeiras, onde encontra alimento em abundância, especialmente esponjas marinhas, anêmonas e pequenos invertebrados.
+    Infelizmente, a tartaruga-de-pente é considerada criticamente ameaçada de extinção pela União Internacional para a Conservação da Natureza (IUCN). Além da caça predatória, sofre com a destruição dos ninhos, a poluição dos mares e a captura acidental em redes de pesca. A conservação dessa espécie exige ações rigorosas de proteção ambiental, educação das comunidades litorâneas e monitoramento de áreas de desova, garantindo que as futuras gerações ainda possam encontrar esses animais nos oceanos.
+    </p>
+
+    <button (click)="carregarVideo5()">
+  {{ showVideo ? 'Fechar Vídeo' : 'Play Vídeo' }}
+</button>
+
+    <div *ngIf="showVideo">
+      <video width="640" controls class="video-pequeno">
+        <source [src]="videoUrl" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+
+</div>

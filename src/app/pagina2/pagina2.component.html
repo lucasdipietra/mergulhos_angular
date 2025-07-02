@@ -1,0 +1,27 @@
+<div class="background"></div>
+
+
+<div class="container">
+
+
+
+
+    <h2>Coió (Falso Voador)</h2>
+
+    <p>O Coió, conhecido também como Falso Voador, é um peixe típico de águas tropicais do Atlântico Sul, especialmente comum na costa brasileira. Seu nome popular vem da capacidade de realizar grandes saltos fora d’água, lembrando os movimentos dos peixes-voadores, embora não plane como eles. Esse comportamento ágil o ajuda a escapar de predadores ou a se deslocar rapidamente em busca de alimento.
+O Coió habita principalmente recifes, costões rochosos e áreas costeiras, onde se alimenta de pequenos peixes e crustáceos. É uma espécie bastante ativa e contribui para o equilíbrio ecológico dessas regiões, fazendo parte da cadeia alimentar marinha. Apesar de não ser muito conhecido do grande público, é valorizado por pescadores artesanais e por sua presença em ambientes ricos em biodiversidade.
+</p>
+
+    <button (click)="carregarVideo2()">
+  {{ showVideo ? 'Fechar Vídeo' : 'Play Vídeo' }}
+</button>
+
+    <div *ngIf="showVideo">
+      <video width="640" controls class="video-pequeno">
+        <source [src]="videoUrl" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+
+</div>

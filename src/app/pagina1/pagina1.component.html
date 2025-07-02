@@ -1,0 +1,28 @@
+<div class="background"></div>
+
+
+<div class="container">
+
+
+
+
+    <h2>Moreia</h2>
+
+    <p>As moreias são peixes de corpo alongado e aparência serpentina, comuns em águas tropicais e subtropicais, onde vivem escondidas em fendas de rochas e recifes de corais. São predadoras eficientes, alimentando-se principalmente de peixes, crustáceos e polvos, geralmente durante a noite. Suas mandíbulas possuem dentes afiados e uma mordida forte, o que as torna temidas por mergulhadores, embora raramente ataquem humanos sem provocação.
+Apesar da aparência intimidadora, as moreias têm um papel importante no equilíbrio dos ecossistemas marinhos, ajudando a controlar populações de presas. Algumas espécies possuem uma mandíbula faríngea extra, que ajuda a capturar e engolir presas, um traço raro entre os peixes. A preservação de seus habitats naturais, como os recifes de coral, é essencial para a sobrevivência dessas fascinantes criaturas.
+
+    </p>
+
+    <button (click)="carregarVideo1()">
+  {{ showVideo ? 'Fechar Vídeo' : 'Play Vídeo' }}
+</button>
+
+    <div *ngIf="showVideo">
+      <video width="640" controls class="video-pequeno">
+        <source [src]="videoUrl" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+
+</div>

@@ -1,0 +1,27 @@
+<div class="background"></div>
+
+
+<div class="container">
+
+
+
+
+    <h2>Lulas</h2>
+
+    <p>As lulas são moluscos marinhos pertencentes à classe dos cefalópodes, conhecidas por sua agilidade, inteligência e corpo alongado com tentáculos. Vivem em mares de todo o mundo, desde águas costeiras até grandes profundidades, sendo predadoras ativas que se alimentam de peixes, crustáceos e outros pequenos animais marinhos. Usam seus tentáculos para capturar as presas com rapidez e precisão.
+Além da velocidade, as lulas se destacam pela habilidade de soltar tinta para confundir predadores e fugir. Também são mestres da camuflagem, mudando de cor e textura para se esconder. Algumas espécies atingem grandes tamanhos, como a lula gigante, que pode ultrapassar 10 metros. Por sua importância ecológica e econômica, são alvo de pesca em diversas regiões do mundo.
+</p>
+
+    <button (click)="carregarVideo3()">
+  {{ showVideo ? 'Fechar Vídeo' : 'Play Vídeo' }}
+</button>
+
+    <div *ngIf="showVideo">
+      <video width="640" controls class="video-pequeno">
+        <source [src]="videoUrl" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+
+</div>
